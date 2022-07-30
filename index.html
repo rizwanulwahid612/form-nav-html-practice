@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            max-width: 100%;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        :root{
+            --main: rgb(229, 243, 229);
+
+            
+        }
+       header{
+        margin-right: 10px;
+       }
+        h1{
+            background-color: aqua;
+            color: var(--main);
+            border: 2px solid var(--main)
+        }
+        p{
+            background-color: var(--main);
+            color: brown;
+        }
+        h3{
+            background-color: aqua;
+            color: brown;
+        }
+        nav li{
+            list-style: none;
+            
+            
+        }
+        nav a{
+            margin:10px;
+            text-decoration: none;
+            color: gray;
+            font-size: 100%;
+            background-color: rgb(215, 228, 40);
+           
+        }
+        nav a:hover{
+            color: brown;
+            background-color: orange;
+        }
+        nav > ul >li:hover >ul{
+            
+            display: block;
+            background-color: bisque;
+            position: absolute;
+            padding: 0%;
+            margin: 0%;
+           
+
+        }
+        nav> ul{
+            display: flex;
+            margin-left: 70%;
+            max-width: 100%;
+
+        }
+        .block{
+            display: none;
+        }
+       
+        td, th{
+            border: 1px solid gray;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        span{
+            display:inline-block;
+            background-color: aquamarine;
+            border: 2px solid gray;
+            height: 250px;
+            width:270px ;
+        }
+        .middle:focus{
+          font-size: 30px;
+          color: brown;
+
+        }
+         .hero:visited{
+            color: rgb(195, 195, 241);
+           
+        }
+        .swim div{
+            
+            width: 200px;  
+        }
+        #ring{
+             position:relative;
+             top:75px;
+           
+        }
+        #boy{
+            position: relative;
+            top:150px;
+            z-index: 1;
+        }
+        .half {
+            width: 50%;
+            margin: 10px 20px;
+        }
+        .disp {
+            display: flex;
+          
+        }
+        .const{
+            background-color: bisque;
+            border:2px solid gray;
+            width:30%;
+            height: 30%;
+            margin-left: 32%;
+            padding: 30px 20px 20px 30px;
+
+        }
+        div.eml{
+            color: brown;
+
+            font-size: 30px;
+            
+            padding: 10px 20px 20px 10px;
+
+        }
+        input:focus{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="index.html">Index
+                    <ul class="ind">
+                        <li><a href="">list1</a></li>
+                        <li><a href="">kist2</a></li>
+                        <li><a href="">list3</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="color.html">Color
+                    <ul class="block">
+                        <li><a style="margin: -0px;" href="">link_1</a></li>
+                        <li><a href="">link_2</a></li>
+                        <li><a href="">link_3</a></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Rizwanul Wahid</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores aliquam consequuntur a ab numquam porro necessitatibus, amet neque perferendis.
+        </p>
+        <h3>weree 6r ge uhhu r  uf hu</h3>
+
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Select your pitha</legend>
+                    <p> <label for="chitoy">Chitoy:<input type="radio" name="pitha" id="chitoy"></label></p>
+                    <p><label for="tel">Tel pitha:<input type="radio" name="pitha" id="tel"></label> </p>
+                    <p><label for="vapa">Vapa:<input type="radio" name="pitha" id="vapa"></label> </p>
+                    <p><label for="moric">Morich:<input type="radio" name="pitha" id="moric"></label></p>
+                </fieldset>
+                <fieldset>
+                    <p><label for="sutki"> Sutki<input type="checkbox" name="vorta" id="sutki"></label></p>
+                    <p><label for="alo">Alo<input type="checkbox" name="vorta" id="alo"></label></p>
+                    <p><label for="chepa">Chepa<input type="checkbox" name="vorta" id="chepa"></label></p>
+                    <p><label for="sorisha">Sorisha<input type="checkbox" name="vorta" id="sorisha"></label></p>
+                </fieldset>
+                <textarea name="instruction" id="" cols="30" rows="10">Text</textarea>
+           
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+    
+            </form>
+        </section>
+        <section>
+           <table>
+            <thead>
+                <tr>
+                    <th>
+                        No
+                    </th>
+                
+                
+                    <th>
+                        Name
+                    </th>
+            
+                
+                    <th>
+                        Office
+                    </th>
+                
+                
+                    <th>
+                        Salary
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill</td>
+                    <td>Microsoft</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bill</td>
+                    <td>Microsoft</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bill</td>
+                    <td>Microsoft</td>
+                    <td>$1200</td>
+                </tr>
+
+            </tbody>
+           </table>
+        </section>
+        <section>
+            <span>
+                Rizvi
+            </span>
+            <span>
+                rony
+            </span><span>
+                jamal
+            </span><span>
+                shovo
+            </span><span>
+                jafor
+            </span>
+            
+        </section>
+        <section style="color:blue">
+            <input class="middle" type="text" name="" id="">
+        </section>
+        <a class="hero" href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+        
+           <section class="swim">
+            <div id="boy"><img src="image/boy.svg" alt=""></div>
+            <div id ="ring"><img src="image/ring.svg" alt=""></div>
+            <div><img src="image/water.svg" alt=""></div>
+
+
+           </section>
+
+
+
+           <section class="disp">
+            <article class="half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas quaerat voluptate tenetur earum doloremque explicabo, ut eaque excepturi. Repudiandae doloribus beatae deserunt voluptatibus ab consequatur sint numquam reprehenderit accusamus voluptates ut accusantium fugit omnis rerum saepe ducimus ad placeat, blanditiis a neque at inventore voluptas laborum facere. Natus, animi?</p>
+                <p>Officiis tempora distinctio nisi minus inventore similique recusandae veniam quos sint placeat nemo ad, natus praesentium sunt facere velit eos aliquid optio dicta est fugiat iure amet libero harum! Asperiores expedita quaerat distinctio. Quae magni dignissimos libero tempore expedita obcaecati iure autem voluptate laboriosam, dolore repudiandae magnam quidem. Officiis, praesentium?</p>
+                <p>Sed, natus. Quasi asperiores, repellendus repudiandae similique accusantium at repellat aut assumenda exercitationem illum expedita quis sunt dicta veniam consequuntur beatae inventore maxime, laborum sapiente optio nemo minima. Officiis, reprehenderit at voluptas quisquam, vitae eius corporis quod mollitia eaque, saepe quia quidem sequi alias deleniti cupiditate obcaecati dolor nihil nostrum.</p>
+                <p>Laboriosam, quod mollitia. Dolorum, obcaecati similique officia quod culpa suscipit quidem voluptate veritatis necessitatibus architecto amet qui deserunt dolores accusamus commodi error vitae quasi, voluptas adipisci recusandae explicabo eveniet id provident corrupti. Vitae quis consequuntur aliquid, sapiente tenetur temporibus corrupti dolorum veniam praesentium blanditiis magni culpa. Dolores molestiae sequi nisi.</p>
+
+            </article>
+            <article class="half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis commodi, perferendis animi vel nesciunt explicabo dolorem exercitationem vitae recusandae unde? Delectus nobis dignissimos aspernatur quia! Necessitatibus odit fuga corporis id earum, cum cumque nostrum vero, eum dicta reiciendis obcaecati ad harum perferendis, ea dolorum debitis architecto quaerat quam animi.</p>
+                <p>Iste numquam repudiandae aut, eveniet repellendus veritatis nihil eius perferendis itaque ipsa obcaecati quam magnam ad totam quibusdam fugit similique blanditiis optio quasi dignissimos deserunt sunt fuga enim. Obcaecati voluptas, voluptatem recusandae eius rem voluptatibus? Nemo illum, voluptatem quae officiis rem, incidunt odio quidem tempora explicabo ducimus facere, ea esse?</p>
+                <p>Unde adipisci blanditiis vel nostrum excepturi accusamus quibusdam, cupiditate ex rem doloribus et, sed minus dolorem repellat labore impedit voluptate voluptatibus, magnam optio magni voluptates provident sapiente consequuntur culpa! In possimus voluptas nihil, ex nemo quos suscipit non dolorum dolorem cupiditate cumque quaerat ad. Doloribus delectus placeat consequatur eveniet dignissimos?</p>
+                <p>Recusandae a, incidunt culpa repellendus nihil ipsum maiores, quam reprehenderit accusantium nulla libero aspernatur repudiandae similique expedita doloribus odit consequatur officia? Explicabo, et, voluptatem repellendus vel excepturi adipisci saepe ipsam commodi sunt nesciunt numquam magnam ipsum veritatis. Deleniti, fugit quia. Deleniti quisquam vero quis magni tempora inventore possimus alias velit!</p>
+            </article>
+           </section>
+           <section class="const">
+            <div class="eml">
+                <p style="margin-left: 32%;">Email:<input type="email" name="email" id=""placeholder="email"></p>
+            </div>
+           </section>
+    </main>
+
+    <footer>
+        <p style="margin-top: 40%; text-align: center;">
+            coppywrite 2022
+        </p>
+    </footer>
+</body>
+</html>
